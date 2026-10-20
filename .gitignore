@@ -1,2 +1,45 @@
+# ===========================
+# 🔐 SENSITIVE - NEVER COMMIT
+# ===========================
 .env
-node_modules
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ===========================
+# 📦 Node Modules
+# ===========================
+node_modules/
+**/node_modules/
+
+# ===========================
+# 🏗️ Build Output
+# ===========================
+dist/
+build/
+**/dist/
+**/build/
+
+# ===========================
+# 📁 Upload Folder (user files)
+# ===========================
+Backend/upload/*
+!Backend/upload/.gitkeep
+
+# ===========================
+# 🛠️ OS / Editor Files
+# ===========================
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+npm-debug.log*
+
+# ===========================
+# 🔑 SSL / Private Keys
+# ===========================
+*.pem
+*.key
+*.cert
+*.p12

@@ -1,0 +1,17 @@
+{
+  "name": "mern-e-commerce-project",
+  "version": "1.0.0",
+  "description": "MERN E-Commerce Project",
+  "license": "ISC",
+  "author": "Ankit",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm --prefix Backend run dev",
+    "frontend": "npm --prefix Frontend run dev",
+    "dev": "node node_modules/concurrently/dist/bin/index.js \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
